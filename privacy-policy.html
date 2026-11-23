@@ -34,11 +34,12 @@
 <h2>Contacts, calendars and reminders</h2>
 <p>If you allow it, MessageSift uses Contacts to show names instead of phone numbers, Calendars to show meeting invitations waiting for your answer, and Reminders to show open reminders with a due date. If you send an item to Reminders or Calendar, MessageSift adds it there on your Mac. If you send an item to Things, MessageSift hands it to the Things app on your Mac.</p>
 
-<h2>Work tools you connect</h2>
-<p>If you connect Slack, GitHub, GitLab, Jira, Linear, Microsoft (Teams and Outlook) or Todoist, MessageSift talks directly from your Mac to that service with the key or sign-in you provide. Keys are stored in your Mac's keychain. Data goes only between your Mac and that service; that service's own privacy policy applies to it. We never receive it.</p>
+<h2>No network access</h2>
+<p>MessageSift has no network access. macOS enforces this with the App Sandbox: the app reads only the folders and data you allow on your Mac.</p>
 
 <h2>The optional Connector</h2>
-<p>Mac notifications and WhatsApp can only be added with the separate, free <a href="https://github.com/indaos/MessageSift-Connector">MessageSift Connector</a>, which you can install yourself. It runs on your Mac, has no network access, and passes what it reads to MessageSift through a file in the app's private shared folder on your Mac.</p>
+<p>Mac notifications, WhatsApp, Slack, GitHub, GitLab, Jira, Linear, Teams and Outlook can only be added with the separate, free and open-source <a href="https://github.com/indaos/MessageSift-Connector">MessageSift Connector</a>, which you can install yourself. It runs on your Mac and passes what it reads to MessageSift through a file in the app's private shared folder on your Mac.</p>
+<p>The Connector has no network access by default. Mac notifications and WhatsApp never need it. Before the Connector contacts a work tool for the first time, it asks you to allow that service's exact host; it then talks only to that service, directly from your Mac, with the key or sign-in you enter in the Connector. Keys are stored in the Connector's keychain items on your Mac and are never given to MessageSift. Data goes only between your Mac and that service; that service's own privacy policy applies to it. We never receive it.</p>
 
 <h2>Where your data is stored</h2>
 <p>Everything MessageSift keeps (actions, what is done, settings and what it learned) is stored in the app's private storage on your Mac, and in a shared folder that only its widget and Mail extension can open. Nothing is stored anywhere else.</p>

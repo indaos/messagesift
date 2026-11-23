@@ -27,16 +27,19 @@
 <p>Right-click your desktop, choose Edit Widgets, find MessageSift and drag a widget onto the desktop: Now (what needs you today), Spending, Parcels, Next trip or Insights. If the Done button doesn't react, turn off dimmed or monochrome widgets in System Settings › Desktop &amp; Dock › Widgets.</p>
 
 <h2>How do I turn on the Mail extension?</h2>
-<p>In Mail, open Settings › Extensions and tick "MessageSift Urgency". It flags urgent mail inside Mail.</p>
+<p>In Mail, open Settings › Extensions and tick "MessageSift Actions". It flags urgent mail inside Mail.</p>
+
+<h2>Does MessageSift use the network?</h2>
+<p>No. MessageSift reads only the folders and data you allow on your Mac (such as Mail, Messages and Calendar) and has no network access; macOS enforces this with the App Sandbox. Sources that need the network come from the free, open-source <a href="https://github.com/indaos/MessageSift-Connector">MessageSift Connector</a>, so you can check what it does. MessageSift works fully without it.</p>
 
 <h2>How do I connect Slack or a work tool?</h2>
-<p>Open Settings › Sources, choose the service and paste your key there. Each guide in the app tells you where to find the key.</p>
+<p>Slack, GitHub, GitLab, Jira, Linear, Teams and Outlook are read by the MessageSift Connector with your own key. Turn the source on in MessageSift (Settings › Sources) and click "Open the Connector to Add Your Key…". In the Connector's Services window, enter the key and click Check and Save. The Connector has no network until you allow it: before it contacts a service for the first time, it asks "Allow the Connector to connect to …?" and names the exact host. You can turn each one off in Services. Keys stay in the Connector and are never given to MessageSift.</p>
 
 <h2>Can MessageSift read Mac notifications or WhatsApp?</h2>
-<p>Not by itself: App Store apps can't read them. The free, open-source <a href="https://github.com/indaos/MessageSift-Connector">MessageSift Connector</a> adds them. MessageSift works fully without it.</p>
+<p>Not by itself: App Store apps can't read them. The <a href="https://github.com/indaos/MessageSift-Connector">MessageSift Connector</a> adds them, with no network access.</p>
 
 <h2>How do I install the MessageSift Connector?</h2>
-<p>Download <a href="https://github.com/indaos/MessageSift-Connector/releases/latest">MessageSift Connector.dmg</a>, open it and drag the app onto Applications. Open it, click Open System Settings and turn on MessageSift Connector in Privacy &amp; Security › Full Disk Access. If it isn't in the list, click + below the list and choose it in Applications. Then click Restart Connector. In MessageSift, turn on WhatsApp and Mac notifications in Settings › Sources.</p>
+<p>Download <a href="https://github.com/indaos/MessageSift-Connector/releases/latest">MessageSift Connector.dmg</a>, open it and drag the app onto Applications. Open it, click Open System Settings and turn on MessageSift Connector in Privacy &amp; Security › Full Disk Access. If it isn't in the list, click + below the list and choose it in Applications. Then click Restart Connector. In MessageSift, turn on WhatsApp and Mac notifications in Settings › Sources. Full Disk Access is only needed for Mac notifications and WhatsApp; for Slack, GitHub, GitLab, Jira, Linear, Teams and Outlook, use the Connector's Services window.</p>
 
 <h2>Is my mail uploaded?</h2>
 <p>No. Your mail and messages stay on your Mac and are understood with Apple's on-device model. See the <a href="privacy-policy.html">privacy policy</a>.</p>
